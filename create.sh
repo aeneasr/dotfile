@@ -12,8 +12,9 @@ brew cask install gpg-suite jdownloader minikube ngrok pgadmin4 \
 echo 'export PATH="/usr/local/opt/mysql-client/bin:$PATH"' > ~/.zshenv
 echo 'export PATH="/usr/local/opt/mysql-client/bin:$PATH"' > ~/.bash_profile
 
-echo '[mysqldump]' > .my.cnf 
-echo 'column-statistics=0' > .my.cnf 
+## Make mysqldump compatible with versions prior to 8.0
+echo '[mysqldump]' > ~/.my.cnf 
+echo 'column-statistics=0' > ~/.my.cnf 
 
 source ~/.zshenv
 
