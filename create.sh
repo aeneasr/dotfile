@@ -24,10 +24,10 @@ echo ".DS_Store" >> ~/.gitignore
 
 # Go
 mkdir -p ~/workspace/go
-echo 'export GOPATH="~/workspace/go"' >> ~/.zshenv
-echo 'export GOPATH="~/workspace/go"' >> ~/.bash_profile
-echo 'export PATH="~/workspace/go/bin:$PATH"' >> ~/.zshenv
-echo 'export PATH="~/workspace/go/bin:$PATH"' >> ~/.bash_profile
+echo 'export GOPATH="$HOME/workspace/go"' >> ~/.zshenv
+echo 'export GOPATH="$HOME/workspace/go"' >> ~/.bash_profile
+echo 'export PATH="$HOME/workspace/go/bin:$PATH"' >> ~/.zshenv
+echo 'export PATH="$HOME/workspace/go/bin:$PATH"' >> ~/.bash_profile
 
 # JS
 mkdir -p ~/workspace/js
