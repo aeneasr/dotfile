@@ -2,9 +2,11 @@
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 brew install git golang node kubernetes-cli mysql-client git-town \
   skaffold helm nancy circleci cockroach composer gettext terraform \
   gh gnupg gnutls wget sqlite postgresql golangci-lint gometalinter goreleaser hashcat heroku imagemagick minikube
+
 brew cask install gpg-suite jdownloader ngrok pgadmin4 \
   veracrypt virtualbox wireshark db-browser-for-sqlite google-cloud-sdk
 
