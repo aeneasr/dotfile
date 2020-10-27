@@ -28,3 +28,39 @@
 	gpgsign = true
 [pull]
 	rebase = true
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+        name = aeneasr
+        email = 3372410+aeneasr@users.noreply.github.com
+        signingkey = 1A463E422E5E2222
+[credential]
+        helper = osxkeychain
+[alias]
+        append = town append
+        hack = town hack
+        kill = town kill
+        new-pull-request = town new-pull-request
+        prepend = town prepend
+        prune-branches = town prune-branches
+        rename-branch = town rename-branch
+        repo = town repo
+        ship = town ship
+        sync = town sync
+        npr = town new-pull-request
+        u = "!git commit -a -m u; git push origin"
+        cu = "!make format; make lint; git commit -a -m u; git push origin"
+[core]
+        excludesfile = /Users/foobar/.gitignore
+[gpg]
+        program = gpg2
+[commit]
+        gpgsign = true
+[pull]
+        rebase = true
+[url "git@github.com:"]
+        insteadOf = https://github.com/
+[url "git://"]
+        insteadOf = https://
+[push]
+        default = current
